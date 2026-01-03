@@ -5,7 +5,10 @@ public class usd {
     public static void main(String[] args) {
         double result = Currency.EUR.convertToUSD(Currency.GBP, 100);
         System.out.println("100 EUR = " + result + " GBP");
-
+        result = Currency.USD.convertToUSD(Currency.CNY, 1000);
+        System.out.println("1000 USD = " + result + " CNY");
+        result = Currency.USD.convertToUSD(Currency.CHF, 1000);
+        System.out.println("1000 CHF = " + result + " USD");
     }
 }
 enum Currency{
